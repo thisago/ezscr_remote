@@ -39,6 +39,7 @@ nim r tests/*.nim
 ## TODO
 
 - [ ] Test on Windows
+- [ ] Add tests
 
 ## License
 
