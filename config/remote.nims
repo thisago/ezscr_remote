@@ -25,7 +25,7 @@ proc main*(params: seq[string]): bool =
   var scrParams: seq[string]
   for param in params[1..^1]:
     scrParams.add "\"" & param & "\""
-  echo scrParams
+
   if req.code != 200:
     echo "The script doesn't exists"
     return false

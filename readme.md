@@ -24,7 +24,7 @@ Now you can use the script as following
 ezscr run remote https://raw.githubusercontent.com/thisago/remote_nimscript/master/examples/sum.nims 3 5
 ```
 
-Output: `8` (expected)
+Output: `8.0` (expected)
 
 ---
 
