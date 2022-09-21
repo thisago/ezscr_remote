@@ -36,6 +36,10 @@ To test, just run
 nim r tests/*.nim
 ```
 
+## TODO
+
+- [ ] Test on Windows
+
 ## License
 
 MIT
