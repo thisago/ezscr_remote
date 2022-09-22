@@ -36,6 +36,15 @@ To test, just run
 nim r tests/*.nim
 ```
 
+## FAQ
+
+### Can I run a `remote.nims` that downloads another `remote.nims`?
+
+Yes, how many you want:
+```bash
+ezscr run remote https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/examples/sum.nims 2 6
+```
+
 ## TODO
 
 - [ ] Test on Windows
