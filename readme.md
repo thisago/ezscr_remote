@@ -1,4 +1,4 @@
-# Remote Nimscript
+# Remote Nimscript in Ezscr
 
 This is a example of how to run Nimscript files that are available in a HTTP
 server without Nim installed
@@ -21,7 +21,7 @@ ezscr pack
 Now you can use the script as following
 
 ```bash
-ezscr run remote https://raw.githubusercontent.com/thisago/remote_nimscript/master/examples/sum.nims 3 5
+ezscr run remote https://raw.githubusercontent.com/thisago/ezscr_remote/master/examples/sum.nims 3 5
 ```
 
 Output: `8.0` (expected)
@@ -52,7 +52,7 @@ ezscr run remote https://example.com/remote.nims \ # scr 1 that runs scr 2
 Example
 
 ```bash
-ezscr run remote https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/examples/sum.nims 2 5 3
+ezscr run remote https://raw.githubusercontent.com/thisago/ezscr_remote/master/config/remote.nims https://raw.githubusercontent.com/thisago/ezscr_remote/master/config/remote.nims https://raw.githubusercontent.com/thisago/ezscr_remote/master/examples/sum.nims 2 5 3
 ```
 Out: `10.0`
 
