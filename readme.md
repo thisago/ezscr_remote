@@ -21,15 +21,6 @@ ezscr pack
 Now you can use the script as following
 
 ```bash
-ezscr run remote https://example.com/remote.nims \ # scr 1 that runs scr 2
-                 https://example.com/remote.nims \ # scr 2 runs the scr 4
-                 https://example.com/sum.nims \ # scr 3 makes the sum
-                 2 4
-```
-Out: `8.0`
-
-Example
-```bash
 ezscr run remote https://raw.githubusercontent.com/thisago/remote_nimscript/master/examples/sum.nims 3 5
 ```
 
@@ -50,9 +41,20 @@ nim r tests/*.nim
 ### Can I run a `remote.nims` that downloads another `remote.nims`?
 
 Yes, how many you want:
+
 ```bash
-ezscr run remote https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/examples/sum.nims 2 6
+ezscr run remote https://example.com/remote.nims \ # scr 1 that runs scr 2
+                 https://example.com/remote.nims \ # scr 2 runs the scr 4
+                 https://example.com/sum.nims \ # scr 3 makes the sum
+                 2 4
 ```
+
+Example
+
+```bash
+ezscr run remote https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/config/remote.nims https://raw.githubusercontent.com/thisago/remote_nimscript/master/examples/sum.nims 2 5 3
+```
+Out: `10.0`
 
 ## TODO
 
